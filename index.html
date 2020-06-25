@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+ <head>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+ </head>
+
+
+ <body>
+  
+  <div class="wrapper">
+
+  <!-- link to highscores page -->
+  <div id="highscores"><a href="table.html">View Scores</a></div><br>
+  
+  <!-- countdown timer  -->
+  
+
+  
+      
+        <!-- hidden after Start btn is pressed  -->     
+        <div id="startTitle"><p>This is a multiple choice quiz on JavaScript.</p><p>You have 75 seconds to answer all the questions.</p>
+        <p>Your score will be the remaining time. A wrong answer will subtract 15 seconds from the time remaining.</p>
+        <p style="font-weight: bold;">Click the button to start the JavaScript quiz</p></div>
+
+      <!-- button to start the quiz  -->  
+      <button id="startButton">Start Quiz</button>
+      
+      <!-- appears after Start btn is pressed  -->
+      <div class="hidden" id="questionArea">
+            <p id="question"></p>
+            <div id="questionTitle"></div><br>
+            
+                <input type="radio" name="one" id="Q0" value="a"><span id="Qu0">q0</span><br>
+            
+                <input type="radio" name="one" id="Q1" value="b"><span id="Qu1">q1</span><br>
+            
+                <input type="radio" name="one" id="Q2" value="c"><span id="Qu2">q2</span><br>
+            
+                <input type="radio" name="one" id="Q3" value="d"><span id="Qu3">q3</span><br><br>
+        
+            <button id="submitButton">Submit</button>
+                  
+      </div>
+  
+      <!-- appears after Start btn is pressed  -->
+      <div id="questionChoice"></div>
+      <br>
+  <div id="timer" style="color: red;">Time remaining: <span id="countdowntimer">75</span> seconds</div><br>
+  </div>
+
+<script type="text/javascript" charset="UTF-8" src="./logic.js">
+</script>
+
+ </body>
+
+</html>

@@ -111,7 +111,7 @@ document.getElementById("submitButton").addEventListener("click", function(event
           if (counting < 5) getQuestion();
           else
           {
-            localStorage.setItem('timescore', JSON.stringify(timeleft));
+            localStorage.setItem('timescore', timeleft);
             updateScores();
           }
     });

@@ -1,28 +1,31 @@
+console.log("javascript loaded");
+console.log("json local storage allscore: " + localStorage.getItem("allscores"))
 
 var tablelogic = 
 {
     // method to display the table
     loaddata: function () 
     {
-        var datacount = localStorage.length - 1;  
-        
-        // draws the table of the scores array
-        if (datacount > 0)
-        {
+       
             var render = "<table border='1'>";
             render += "<tr><th>Initials</th><th>Score</th></tr>";  
-            for (i=0; i < datacount; i++)
-            {
-            var key = localStorage.key(i); // get key
-            var score = localStorage.getItem(key); //get data from key
+           
+            var score = localStorage.getItem("allscores"); 
+            
             var data = JSON.parse(score);
+            for(x=0; x < data.length; x++)
+             {
+              render += "<tr><td>" + data[x].init + "</td><td>" + data[x].score + " </td>";
 
-            render += "<tr><td>" + data.init + "</td><td>" + data.score + " </td>";
-            }
+             }   
+                                      console.log("data: "+data);
+                                                                                      
+          
+           
         render+="</table>";
         results.innerHTML = render;
-    }
-},
+    },
+
 
 //method to clear storage
 clearstorage: function () 

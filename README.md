@@ -1,4 +1,4 @@
-# Code quiz app 
+# Code Quiz app 
 
 https://mshattuck.github.io/codequiz/
 

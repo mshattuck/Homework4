@@ -1,4 +1,4 @@
-# Homework4 for Full Stack Boot Camp
+# codequiz for Full Stack Boot Camp
 
 
 by Michael Shattuck 6/25/2020
